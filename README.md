@@ -1,7 +1,7 @@
 # OpenCL.NetCore
 by Gabe C
 
-Nuget Package coming soon!
+[Nuget Package](https://www.nuget.org/packages/OpenCL.NetCore/)
 
 ### What is it?
 .NET bindings for OpenCL that are easy-to-use and true to the original API. There is no 
