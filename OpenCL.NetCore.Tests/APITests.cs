@@ -458,13 +458,20 @@ namespace OpenCL.NetCore.Tests
     public sealed class VisualizerTest
     {
         [TestMethod]
-        [Ignore]//i don't have intel
         public void Foo()
         {
-            using (var env = "*Intel*".CreateCLEnvironment())
+            using (var env = "*".CreateCLEnvironment())
             {
+                Assert.IsNotNull(env);
+                Assert.AreNotEqual(0, env.Devices.Length);
+
+                foreach (var dev in env.Devices)
+                {
+                    Assert.IsTrue(dev.IsValid());
+                }
+
                 var data = Enumerable.Range(0, 10000).ToArray();
-                var buffer = env.Context.CreateBuffer(data);
+                env.Context.CreateBuffer(data);
             }
         }
     }
