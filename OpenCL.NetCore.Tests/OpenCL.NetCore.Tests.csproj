@@ -17,5 +17,11 @@
     <ProjectReference Include="..\OpenCL.NetCore\OpenCL.NetCore.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TestKernels\TestKernel1.cl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 
 </Project>

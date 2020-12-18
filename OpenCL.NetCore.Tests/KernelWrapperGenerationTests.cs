@@ -11,7 +11,7 @@ namespace OpenCL.NetCore.Tests
         {
             //var basePath = AppDomain.CurrentDomain.BaseDirectory;
             //var filePath = Path.Combine(basePath, @"TestKernels\TestKernel1.cl");
-            string filePath = @"E:\repos\OpenCL.NetCore\OpenCL.NetCore.Tests\TestKernels\TestKernel1.cl";
+            string filePath = @"TestKernels\TestKernel1.cl";
             Tasks.Kernel.ProcessKernelFile(filePath, File.ReadAllText(filePath));
         }
     }
