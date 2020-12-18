@@ -11,6 +11,10 @@ little explicit marshaling as possible) and .NET friendly at the same time.
 OpenCL.NetCore is a fork of [OpenCL.Net by Ananth B](https://github.com/dgsantana/OpenCL.NET/). The main purpose of this project is to modernize OpenCL.Net by giving it proper VS projects and MSTests in .NET Core.
 It still needs some testing and debugging.
 
+### .NET 5 is here
+Well, the new naming convention of .NET certainly has me questioning my decision to name 
+this project OpenCL.NetCore. For now, I will keep the name despite the project being updated for .NET 5.
+
 ### License
 The contents of this project are made available under the terms of the
 Eclipse Public License v1.0 (the "License") which accompanies this
